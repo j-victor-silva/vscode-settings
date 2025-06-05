@@ -1,114 +1,22 @@
 {
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.tabSize": 4,
-    // Precisa instalar o Python e criar um ambiente virtual chamado venv
-  "python.pythonPath": "python.exe",
-    "code-runner.executorMap": {
-      // Precisa instalar o nodejs
-      "javascript": "node",
-      // Precisa instalar o XAMPP (Windows)
-      "php": "C:\\xampp\\php\\php.exe",
-      // Precisa instalar o Python e criar um ambiente virtual chamado venv
-      "python": "python -u",
-      "powershell": "powershell -ExecutionPolicy ByPass -File",
-      "bat": "cmd /c",
-      "shellscript": "bash"
+    "workbench.colorTheme": "Dracula Theme",
+    "vs-kubernetes": {
+        "vscode-kubernetes.kubectl-path-linux": "/home/joao.silva/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/joao.silva/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vscode-kubernetes.helm-path-linux": "/home/joao.silva/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm"
     },
-    // Muda do Powershell para CMD
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-    "terminal.integrated.shellArgs.windows": [
-      "-ExecutionPolicy",
-      "Bypass"
-    ],
-    "code-runner.clearPreviousOutput": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": true,
-    "debug.console.fontSize": 14,
-    "editor.formatOnSave": true,
-    "files.associations": {
-      "*.html": "html",
-      "**/templates/*.html": "django-html",
-      "**/templates/*": "django-txt",
-      "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    "cloudcode.project": "new-dito",
+    "geminicodeassist.project": "",
+    "cloudcode.autoDependencies": "off",
+    "git.autofetch": true,
+    "workbench.iconTheme": "vscode-icons",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "emmet.includeLanguages": {
-      "django-html": "html"
-    },
-    "python.linting.pylintArgs": [
-      "--load-plugins=pylint_django",
-      "--errors-only"
-    ],
-    "editor.rulers": [
-      79
-    ],
-    "git.enableSmartCommit": true,
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.cursorBlinking": true,
-    "github.copilot.enable": {
-      "*": true,
-      "yaml": false,
-      "plaintext": false,
-      "markdown": false
-    },
-    "github.copilot.advanced": {},
-    "tabnine.experimentalAutoImports": true,
-    "git.confirmSync": false,
-    "explorer.confirmDragAndDrop": false,
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "files.autoSave": "afterDelay",
-    "terminal.integrated.fontFamily": "monospace",
-    "editor.guides.bracketPairs": true,
     "editor.renderWhitespace": "trailing",
-    "editor.accessibilitySupport": "off",
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "window.menuBarVisibility": "compact",
-    "python.terminal.focusAfterLaunch": true,
-    "python.envFile": "${workspaceFolder}/.env",
-    "code-runner.executorMapByFileExtension": {
-      ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
-      ".vbs": "cscript //Nologo",
-      ".scala": "scala",
-      ".jl": "julia",
-      ".cr": "crystal",
-      ".ml": "ocaml",
-      ".exs": "elixir",
-      ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-      ".rkt": "racket",
-      ".scm": "csi -script",
-      ".ahk": "autohotkey",
-      ".au3": "autoit3",
-      ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
-      ".kts": "kotlinc -script",
-      ".dart": "dart",
-      ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-      ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-      ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-      ".hs": "runhaskell",
-      ".nim": "nim compile --verbosity:0 --hints:off --run",
-      ".csproj": "dotnet run --project",
-      ".fsproj": "dotnet run --project",
-      ".lisp": "sbcl --script",
-      ".kit": "kitc --run",
-      ".v": "v run",
-      ".vsh": "v run",
-      ".sass": "sass --style expanded",
-      ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-      ".ring": "ring",
-      ".sml": "cd $dir && sml $fileName"
-    },
-    "code-runner.ignoreSelection": true,
-    "code-runner.preserveFocus": false,
-    "code-runner.runInTerminal": true,
-    "[python]": {
-      "editor.formatOnType": true
-    },
-    "window.zoomLevel": -1,
-    "terminal.integrated.fontSize": 13,
-    "terminal.integrated.localEchoStyle": "dim",
-    "terminal.integrated.rightClickBehavior": "nothing",
-    "terminal.integrated.tabs.enabled": false
-  }
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 10
+}
